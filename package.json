@@ -6,7 +6,8 @@
     "license": "MIT",
     "scripts": {
         "babel-node": "babel-node --presets='@babel/preset-env'",
-        "start": "babel-node src/bot.js"
+        "start": "babel-node src/bot.js",
+        "dev": "nodemon --exec npm run babel-node -- src/bot.js"
     },
     "dependencies": {
         "discord.js": "^12.2.0",
@@ -18,7 +19,8 @@
     "devDependencies": {
         "@babel/core": "^7.15.0",
         "@babel/node": "^7.14.9",
-        "@babel/preset-env": "^7.15.0"
+        "@babel/preset-env": "^7.15.0",
+        "nodemon": "^2.0.12"
     },
     "type": "module"
 }
